@@ -1,5 +1,11 @@
 /* ------------------- CSS Reset -------------------- */
 
+:root {
+    --clr-dark-blue: 230 35% 7%;
+    --clr-light-blue: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -78,4 +84,30 @@ select {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap; /* added line */
     border: 0;
+}
+
+/* ------ Colors Utility ------ */
+
+.bg-dark-blue {
+    background-color: hsl(var(--clr-dark-blue));
+}
+
+.bg-light-blue {
+    background-color: hsl(var(--clr-light-blue));
+}
+
+.bg-white {
+    background-color: hsl(var(--clr-white));
+}
+
+.text-dark-blue {
+    color: hsl(var(--clr-dark-blue));
+}
+
+.text-light-blue {
+    color: hsl(var(--clr-light-blue));
+}
+
+.text-white {
+    color: hsl(var(--clr-white));
 }
